@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Validation Exercise!</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.js"></script>
+    <script src="form_rules.js"></script>
+  </head>
+  <body>
+    <form class="cform" id="commentForm" method="get" action="">
+      <fieldset>
+        <legend>Please input your name, email, and a comment</legend>
+        <p>
+          <label for="cname">Name (Required, 2+ characters)</label>
+          <input id="cname" name="name" minlength="2" type="text">
+        </p>
+        <p>
+          <label for="cemail">E-Mail (required)</label>
+          <input id="cemail" name="email" type="email">
+        </p>
+        <p>
+          <label for="cemail_confirmation">Confirm Email (required)</label>
+          <input id="cemail_confirmation" name="email_confirmation" type="email">
+        </p>
+        <p>
+          <label for="country">Country (required)</label>
+          <input id="country" name="country" type="">
+        </p>
+        <p>
+          <label for="zipCode">Zip Code</label>
+          <input id="zipCode" name="zipCode" type="">
+        </p>
+        <p>
+          <label for="password">Password (required)</label>
+          <input id="password" name="password" type="password">
+        </p>
+        <p>
+          <label for="password_confirmation">Password Confirmation (required)</label>
+          <input id="password_confirmation" name="password_confirmation" type="password">
+        </p>
+        <p>
+          <input class="submit" type="submit" value="Submit">
+        </p>
+      </fieldset>
+    </form>
+  </body>
+</html>
